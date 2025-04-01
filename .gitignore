@@ -1,14 +1,18 @@
 # Ignore Python bytecode
 __pycache__/
 
-
 # Ignore environment files
 .env
 venv/
 venv*/  # Handles different virtual env names
 myenv/
 
-
-# Ignore Flask 
+# Ignore Flask session and instance folder
 flask_session/
 instance/
+
+# Ignore SQLite database files
+database/*.db
+
+# Ignore Flask-Migrate migrations (if using Flask-Migrate)
+database/migrations/
