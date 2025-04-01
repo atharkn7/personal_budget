@@ -1,12 +1,12 @@
 # Ignore Python bytecode
-__pycache__/
-*.py[cod]
-*.swp
+
 
 # Ignore environment files
 .env
 venv/
 venv*/  # Handles different virtual env names
+myenv/
 
-# Ignore OS/macOS system files
-.DS_Store
+
+# Ignore Flask 
+flask_session/
