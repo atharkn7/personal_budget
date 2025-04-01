@@ -11,3 +11,4 @@ myenv/
 
 # Ignore Flask 
 flask_session/
+instance/
