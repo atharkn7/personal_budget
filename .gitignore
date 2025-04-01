@@ -1,0 +1,12 @@
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+*.swp
+
+# Ignore environment files
+.env
+venv/
+venv*/  # Handles different virtual env names
+
+# Ignore OS/macOS system files
+.DS_Store
