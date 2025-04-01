@@ -11,17 +11,13 @@
 
 <body>
     <nav>
-        <div class="nav-content">
-            <div class="nav-item">
-                <a href="#"> Login </a>
-            </div>
-            <div class="nav-item">
-                <a href="#"> Register </a>
-            </div>
-        </div>
+        {% block nav %}
+        {% endblock %}
     </nav>
     <aside>
-        <h2>LOGO</h2>
+        <a href="/">
+            <h2>LOGO</h2>
+        </a>
     </aside>
     {% block body %} {% endblock %}
 </body>
