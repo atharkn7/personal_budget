@@ -1,4 +1,52 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+        "aside nav"
+        "aside main";
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: coral;
+    min-height: 100vh;
+}
+
+
+/* NAVBAR */
+nav {
+    grid-area: nav;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    display: flex;
+}
+
+.nav-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    padding: 1em;
+}
+
+/* Aside (Functionality to be added here) */
+aside {
+    grid-area: aside;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: center;
+    padding: 15px 5px;
+    color: white;
+}
+
+/* Main */
+main {
+    grid-area: main;
+    background-color: antiquewhite;
+    padding: 10px;
 }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Budget | {% block title %} {% endblock %} </title>
+
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="nav-item">
+                <a href="#"> Login </a>
+            </div>
+            <div class="nav-item">
+                <a href="#"> Register </a>
+            </div>
+        </div>
+    </nav>
+    <aside>
+        <h2>LOGO</h2>
+    </aside>
+    {% block body %} {% endblock %}
+</body>
+
+</html>
