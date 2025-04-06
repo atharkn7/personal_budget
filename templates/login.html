@@ -7,10 +7,12 @@
     <form action="/home" method="post" class="main-form">
         <h2>Login</h2>
         <hr>
-        <!-- TODO: validations -->
-        <input autofocus name="email" placeholder="Username or Email" type="email" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <button type="submit"> LOGIN </button>
+        {{ form.hidden_tag() }}
+
+        {{ form.email(placeholder="Email") }}
+        {{ form.password(placeholder="Password") }}
+        {{ form.submit(class="submit-btn") }}
+
         <hr>
         <p>Not registered? <a href="/register">Register Here</a></p>
     </form>

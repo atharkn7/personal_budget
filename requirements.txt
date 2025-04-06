@@ -2,5 +2,6 @@ flask
 flask_session
 flask_sqlalchemy
 wtforms
+wtforms[email]
 flask_wtf
 datetime

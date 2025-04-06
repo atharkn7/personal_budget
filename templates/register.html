@@ -4,17 +4,21 @@
 
 {% block login %}
 <div class="main-content">
-    <form action="/" method="post" class="main-form">
+    <form action="/register" method="post" class="main-form">
         <h2>Register</h2>
         <hr>
+        {{ form.hidden_tag() }}
         <div class="registration-name">
-            <input autocomplete="off" autofocus name="fname" placeholder="First Name" type="text" required>
-            <input autocomplete="off" autofocus name="lname" placeholder="Last Name" type="text" required>
+            {{ form.first_name(placeholder="First Name") }}
+            {{ form.last_name(placeholder="Last Name") }}
         </div>
-        <input autocomplete="off" name="email" placeholder="Email" type="email" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <button type="submit"> REGISTER </button>
+        {{ form.email(placeholder="Email") }}
+        {{ form.password(placeholder="Password") }}
+        {{ form.submit(class="submit-btn") }}
         <hr>
+        {% for message in get_flashed_messages() %}
+        {{message}}
+        {% endfor %}
     </form>
 </div>
 {% endblock %}
