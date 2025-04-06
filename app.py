@@ -1,13 +1,12 @@
 from flask import Flask, render_template, request, redirect
 from flask_session import Session
 
-# Importing DB
-from database import db, database 
-from database.models import Users  # Import models
+# TODO: Importing DB
+
 
 #Configure app
 app = Flask(__name__)
-database.init_db(app)  # Initialize database
+# TODO: Initialize database
 
 
 #Configuring session to use file system

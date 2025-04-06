@@ -1,3 +1,6 @@
 flask
 flask_session
 flask_sqlalchemy
+wtforms
+flask_wtf
+datetime
